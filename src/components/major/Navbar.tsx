@@ -58,30 +58,30 @@ const Navbar = () => {
 
             <div id="sideBar" className={`fixed top-0 right-0 bg-slate-800 bg-opacity-80 h-full hover:cursor-pointer overflow-x-hidden duration-500 z-10 ${navOpen ? 'w-full' : 'w-0'} `}>
 
-                <div id="sideNav" className={`fixed top-0 right-0 pt-8 bg-white h-full flex-col justify-center items-center space-y-16 overflow-x-hidden duration-500 font-bold z-50 ${navOpen ? 'w-full md:w-1/2' : 'w-0'} `}>
+                <div id="sideNav" className={`fixed top-0 right-0 pt-8 bg-white h-full flex-col justify-center items-center space-y-16 overflow-x-hidden duration-500 font-bold z-50 ${navOpen ? 'w-1/2' : 'w-0'} `}>
                     <div className='flex flex-row space-x-80 ml-4'>
-                        <div className='hidden md:block'><img src={Logo}  alt='logo.png' className='' /></div>
+                        <div className='hidden md:block'><img src={Logo} alt='logo.png' className='' /></div>
                         <div>
                             <ArrowCircleRight size={32} onClick={() => { setNavOpen(false) }} className="" />
+                        </div>
+                    </div>
+                    <div className='ml-8'>
+                        <div className="text-lg  flex-col">
+                            <div className="p-2 mb-4 w-fit slider-underline font-normal "><a href="#">Destination</a></div>
+                            <div className="p-2 mb-4 w-fit slider-underline font-normal"><a href="#">Hotel</a></div>
+                            <div className="p-2 mb-4 w-fit slider-underline font-normal"><a href="#">Flights</a></div>
+                            <div className="p-2 mb-4 w-fit slider-underline font-normal"><a href="#">Bookings</a></div>
+                        </div>
+                    </div>
+                    <div className='ml-4 mt-64 flex flex-row justify-center space-x-4'>
+                        <a className='group pr-6  relative text-xl hover:cursor-pointer pb-1 pl-4 border-color3 border-b-2 fill-color-down'>Login</a>
+                        <a className='pr-6 text-xl hover:cursor-pointer pb-1 pl-4 border-color3 hover:border-2 fill-color-up'>
+                            Signup
+                        </a>
                     </div>
                 </div>
-                <div className='ml-8'>
-                    <div className="text-lg  flex-col">
-                        <div className="p-2 mb-4 w-fit slider-underline font-normal "><a href="#">Destination</a></div>
-                        <div className="p-2 mb-4 w-fit slider-underline font-normal"><a href="#">Hotel</a></div>
-                        <div className="p-2 mb-4 w-fit slider-underline font-normal"><a href="#">Flights</a></div>
-                        <div className="p-2 mb-4 w-fit slider-underline font-normal"><a href="#">Bookings</a></div>
-                    </div>
-                </div>
-                <div className='ml-4 mt-64 flex flex-row justify-center space-x-4'>
-                    <a className='group pr-6  relative text-xl hover:cursor-pointer pb-1 pl-4 border-color3 border-b-2 fill-color-down'>Login</a>
-                    <a className='pr-6 text-xl hover:cursor-pointer pb-1 pl-4 border-color3 hover:border-2 fill-color-up'>
-                        Signup
-                    </a>
-                </div>
-            </div>
 
-        </div>
+            </div>
 
         </div >
     )
